@@ -7,8 +7,12 @@
 //
 
 import UIKit
+import Foundation
 
 private let reuseIdentifier = "Cell"
+
+//let data: Data 
+//let json = try
 
 var photoArray: [UIImage] = [
                             UIImage (named: "Rick1")!,
@@ -18,7 +22,11 @@ var photoArray: [UIImage] = [
                             UIImage (named: "Rick5")!
                             ]
 
+var urlString = "https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=35b5e91cdc6448e9f25a41cf4faec017&tags=&has_geo=&lat=51.5074&lon=0.1278&extras=url_m%2C+geo&format=json&nojsoncallback=1&auth_token=72157685482991843-2a3c1919a3bc0700&api_sig=84c8bc5f4b3e83b844ee50c4135cefa0"
 
+var url = URL(string: urlString)!
+
+//var mySession:URLSession ses
 
 
 
@@ -26,7 +34,12 @@ class MasterCollectionViewController: UICollectionViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        print (url)
 
+        
+        
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -41,15 +54,25 @@ class MasterCollectionViewController: UICollectionViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using [segue destinationViewController].
         // Pass the selected object to the new view controller.
+        
+        if segue.identifier == "detail" {
+            if let detailViewController = segue.destination as? DetailViewController {
+                
+                let indexPath = self.collectionView!.indexPathsForSelectedItems?[0]
+                detailViewController.photoToShow = photoArray[(indexPath?.row)!]
+            }
+        }
+        
+        
     }
-    */
+ 
 
     // MARK: UICollectionViewDataSource
 

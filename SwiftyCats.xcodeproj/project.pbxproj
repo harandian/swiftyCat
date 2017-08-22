@@ -15,6 +15,7 @@
 		722722F41F4BE43B0061C727 /* MasterCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722722F31F4BE43B0061C727 /* MasterCollectionViewController.swift */; };
 		722722F61F4BE5320061C727 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722722F51F4BE5320061C727 /* Photo.swift */; };
 		722722F81F4BF03E0061C727 /* MyCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722722F71F4BF03E0061C727 /* MyCollectionCell.swift */; };
+		722722FA1F4C05170061C727 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722722F91F4C05170061C727 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		722722F31F4BE43B0061C727 /* MasterCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterCollectionViewController.swift; sourceTree = "<group>"; };
 		722722F51F4BE5320061C727 /* Photo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 		722722F71F4BF03E0061C727 /* MyCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCollectionCell.swift; sourceTree = "<group>"; };
+		722722F91F4C05170061C727 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 			children = (
 				722722DC1F4BE33B0061C727 /* AppDelegate.swift */,
 				722722F31F4BE43B0061C727 /* MasterCollectionViewController.swift */,
+				722722F91F4C05170061C727 /* DetailViewController.swift */,
 				722722F71F4BF03E0061C727 /* MyCollectionCell.swift */,
 				722722F51F4BE5320061C727 /* Photo.swift */,
 				722722E01F4BE33B0061C727 /* Main.storyboard */,
@@ -151,6 +154,7 @@
 				722722DD1F4BE33B0061C727 /* AppDelegate.swift in Sources */,
 				722722F41F4BE43B0061C727 /* MasterCollectionViewController.swift in Sources */,
 				722722F81F4BF03E0061C727 /* MyCollectionCell.swift in Sources */,
+				722722FA1F4C05170061C727 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
